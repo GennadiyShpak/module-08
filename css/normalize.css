@@ -98,6 +98,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  background-color: transparent;
 }
 
 button::-moz-focus-inner,
