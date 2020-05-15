@@ -72,7 +72,6 @@ html {
 .title {
   display: block;
   color: #ffffff;
-  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -82,7 +81,6 @@ html {
   font-family: var(--secondary-font);
   color: rgb(255, 255, 255);
   line-height: 1.2;
-  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -150,7 +148,6 @@ html {
   position: relative;
   width: 121px;
   height: 121px;
-  margin-bottom: 20px;
 }
 
 .partner {
@@ -220,7 +217,9 @@ html {
   }
 
   .title {
+    margin: 0 auto;
     margin-bottom: 18px;
+    max-width: 300px;
   }
 
   .text__wrapper {
@@ -242,12 +241,13 @@ html {
     text-align: center;
   }
 
-  .partner__list-item {
-    text-align: center;
+  .partner__list {
+    margin: 0 auto;
   }
 
   .wrapper__partner-pict {
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -261,7 +261,12 @@ html {
     padding-top: 20px;
   }
 
+  .title {
+    font-size: 3rem;
+  }
+
   .title__item {
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
 
@@ -272,13 +277,10 @@ html {
 
 @media (min-width: 768px) {
   .container__nav {
-    background-color: rgb(26, 25, 21);
     flex-flow: column;
-    height: auto;
     background-image: url(../img/background/bg-tab.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 138px;
+    padding-bottom: 234px;
+    padding-top: 38px;
   }
 
   .navigaton {
@@ -287,18 +289,67 @@ html {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-top: 38px;
+    margin-bottom: 152px;
   }
+
   .title__section {
     margin: 0 auto;
+  }
+
+  .partner__title {
+    margin-bottom: 32px;
+  }
+
+  .title__item {
+    max-width: 400px;
+    font-size: 2.4rem;
+    margin-bottom: 36px;
+  }
+
+  .title {
+    max-width: 504px;
+    font-size: 5.2rem;
+    margin-bottom: 40px;
+  }
+
+  .partner__list {
+    margin-bottom: 40px;
+    display: flex;
   }
 }
 
 @media (min-width: 768px) and (max-width: 939px) {
   .title__section {
-    max-width: 478px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .partner__list {
+    max-width: 472px;
+    flex-flow: row wrap;
+  }
+
+  .partner__list-item:nth-child(2n) {
+    margin-bottom: 58px;
+  }
+
+  .container__partner {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container__nav {
+    background-image: url(../img/background/bg-desc.png);
+  }
+
+  .partner__list {
+    max-width: 924px;
+    justify-content: space-between;
+  }
+
+  .container__partner {
+    padding-bottom: 74px;
   }
 }
