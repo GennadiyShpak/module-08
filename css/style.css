@@ -46,6 +46,11 @@ html {
   --sec-color: #000;
 }
 
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .nav__menu-item-button {
   color: var(--base-collor);
   font-size: 1.4rem;
@@ -84,7 +89,7 @@ html {
   font-weight: 300;
 }
 
-.button {
+.link {
   font-size: 1.4rem;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -96,12 +101,10 @@ html {
   background-color: transparent;
 }
 
-.title__button {
+.title__link {
   background-color: #ff4e50;
   border-style: none;
 }
-
-/* setion partner */
 
 .partner__title {
   color: #333333;
@@ -154,7 +157,7 @@ html {
   text-align: center;
 }
 
-.partner__button {
+.partner__link {
   color: #ff4e50;
   border-color: #ff4e50;
 }
@@ -217,9 +220,7 @@ html {
   }
 
   .title {
-    margin: 0 auto;
     margin-bottom: 18px;
-    max-width: 300px;
   }
 
   .text__wrapper {
@@ -237,7 +238,6 @@ html {
   }
 
   .partner__title {
-    margin-bottom: 16px;
     text-align: center;
   }
 
@@ -265,6 +265,11 @@ html {
     font-size: 3rem;
   }
 
+  .title__section {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   .title__item {
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -272,6 +277,12 @@ html {
 
   .container__partner {
     padding-bottom: 58px;
+  }
+
+  .partner__title {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 }
 
@@ -351,5 +362,39 @@ html {
 
   .container__partner {
     padding-bottom: 74px;
+  }
+
+  .title__link:hover {
+    color: #ff4e50;
+    background-color: #fff;
+  }
+
+  .partner__link:hover {
+    color: #fff;
+    background-color: #ff4e50;
+    border: 2.4px solid #ff4e50;
+  }
+
+  .nav__menu-item-button {
+    cursor: pointer;
+  }
+
+  .sing__up:hover {
+    color: #28ec0e;
+    border: 2px solid #28ec0e;
+    border-radius: 25px;
+    padding: 12px 18px;
+  }
+
+  .login:hover {
+    color: #28ec0e;
+  }
+
+  .nav__title-wrapper {
+    position: relative;
+  }
+
+  .nav__title:hover {
+    color: #28ec0e;
   }
 }
