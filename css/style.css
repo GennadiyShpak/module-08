@@ -97,13 +97,14 @@ html {
   border-style: solid;
   display: inline-block;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .title__link {
   background-color: #ff4e50;
   border-style: none;
   line-height: 1.45;
-  padding: 12px 52px;
+  padding: 11px 52px;
 }
 
 .partner__title {
@@ -157,10 +158,11 @@ html {
 }
 
 .partner__link {
+  border-width: 2px;
   color: #ff4e50;
   border-color: #ff4e50;
-  line-height: 1.4;
-  padding: 10px 52px;
+  line-height: 1.2;
+  padding: 12px 52px;
 }
 
 .wrapper__partner-Bradley::after {
